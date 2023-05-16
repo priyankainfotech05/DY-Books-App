@@ -7,20 +7,14 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
   height: 100%;
   line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("/w3images/mac.jpg");
-  min-height: 100%;
 }
 
 .w3-bar .w3-button {
@@ -44,11 +38,11 @@ background: linear-gradient(138deg, rgba(224,171,251,1) 0%, rgba(210,169,231,1) 
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-wide">
-    	<img src="https://blogger.googleusercontent.com/img/a/AVvXsEjNxAjy1sw1DTDixGFbw3YAeqs0UW_qM6cXxI65lXHORLCFr0dG9ngP1mkZFHK8bjPvG9VDL96cj0DAvjXisIFwo9fnWbla-WrTN8uSLi7qZsPW1mv56n-vUEhTOrRkBAYi3SF-vq2s6AXULHWQeqWH6iKsRY-O0m1ihS3quYOdEBJf0wPVw6gu5BgaQA=s150" height="40px"/>
+    	<img src="/images/DY_Books.png" height="40px"/>
     </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="/donate.html" class="w3-bar-item w3-button">Donate</a>
       <!--<a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
       <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>
@@ -65,7 +59,7 @@ background: linear-gradient(138deg, rgba(224,171,251,1) 0%, rgba(210,169,231,1) 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="/donate.html" onclick="w3_close()" class="w3-bar-item w3-button">Donate</a>
   <!--<a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
   <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
@@ -73,24 +67,25 @@ background: linear-gradient(138deg, rgba(224,171,251,1) 0%, rgba(210,169,231,1) 
 </nav>
 
 <!-- Section -->
-<div class="w3-container" style="padding:64px 16px" id="about">
+<div class="w3-container" style="padding:96px 16px" id="home">
   <h3 class="w3-center">WELCOME TO <b>DY BOOKS</b> !</h3>
   
+  <div class="w3-row"><br></div>
   <div class="w3-row">
-    <div class="w3-col s12 w3-pink w3-center col-grad">Book Summaries</div>
+    <div class="w3-col s12 w3-pink w3-center col-grad"><h4>Book Summaries</h4></div>
   </div>
   <div class="w3-row">
     <a href="https://en.dybooks.in/">
-    	<div class="w3-col s6 w3-center col-grad2"><h3>English</h3></div>
+    	<div class="w3-col s6 w3-center col-grad2" ><h3>English</h3></div>
     </a>
     <a href="https://hn.dybooks.in/">
     	<div class="w3-col s6 w3-center col-grad2"><h3>हिन्दी</h3></div>
     </a>
   </div>
-  <div class="w3-row"><br></div>
+  <div class="w3-row"><br><br></div>
   
   <div class="w3-row">
-    <div class="w3-col s12 w3-pink w3-center col-grad">Full Books</div>
+    <div class="w3-col s12 w3-pink w3-center col-grad"><h4>Full Books</h4></div>
   </div>
   <div class="w3-row">
     <a href="https://read.dybooks.in/">
@@ -100,7 +95,7 @@ background: linear-gradient(138deg, rgba(224,171,251,1) 0%, rgba(210,169,231,1) 
     	<div class="w3-col s6 w3-center col-grad2"><h3>Listen</h3></div>
     </a>
   </div>
-  <div class="w3-row"><br></div>
+  <div class="w3-row"></div>
   
   
   <!-- <p class="w3-center w3-large">Key features of our company</p> 
@@ -131,17 +126,19 @@ background: linear-gradient(138deg, rgba(224,171,251,1) 0%, rgba(210,169,231,1) 
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+<footer class="w3-center w3-black w3-padding-16">
+  <!--<a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a> -->
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <a href="https://www.youtube.com/@dybooksworld" target="_blank"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <a href="https://facebook.com/dybooksworld" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://instagram.com/dybooksworld" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/DYBooksWorld" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/dybooksworld" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    -->
   </div>
-  <p>&copy; <a href="#" title="DY Books" target="_blank" class="w3-hover-text-green">DY Books</a></p>
+  <p>&copy; DY Books</p>
 </footer>
  
 <script>
